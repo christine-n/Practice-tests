@@ -1,5 +1,4 @@
-def solution():
-    N = 1111113446
+def solution(N):
     # write your code in Python 3.6
     print(str(bin(N)[2:]))
     data = str(bin(N)[2:])
@@ -17,7 +16,7 @@ def solution():
 
 
 def main():
-    print(solution())
+    print(solution(1111113446))
 
 
 if __name__ == '__main__':
