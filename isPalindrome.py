@@ -24,6 +24,23 @@ def longestPalindrome(s):
     return longestPd
 
 
+
+def isNumberPalindrome(x):
+    # without conerting the int to string
+    revertedNumber = 0
+    if x < 0 or (x % 10 == 0 and x != 0):
+        return False
+    elif x >= 0 and x < 10:
+        return True
+    else:
+        while (x > revertedNumber):
+            revertedNumber = revertedNumber * 10 + x % 10
+            x //= 10
+            print(x, revertedNumber)
+
+    return x == revertedNumber or x == revertedNumber//10
+
+
 def getNthFib(n, memo={1:0, 2:1}):
     # Write your code here.
     if n in memo:
@@ -33,5 +50,8 @@ def getNthFib(n, memo={1:0, 2:1}):
         memo[n] = getNthFib(n-1, memo) + getNthFib(n-2, memo)
         print()
         return memo[n]
-print(getNthFib(5))
+# print(getNthFib(5))
+
 # print(longestPalindrome('somepowophere'))
+
+print(isNumberPalindrome(2112))

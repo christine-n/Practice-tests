@@ -1,5 +1,6 @@
 from random import randint
 
+
 def quicksort(array):
     # If the input array contains fewer than two elements,
     # then return it as the result of the function
@@ -27,10 +28,9 @@ def quicksort(array):
     # with the `same` list and the sorted `high` list
     return quicksort(low) + same + quicksort(high)
 
-
-    # mylist = input('Enter the list values to sort:   ').split()
+# mylist = input('Enter the list values to sort:   ').split()
 # mylist = [int(x) for x in mylist]
-mylist=[2,1]
+mylist = [5, 3, 7, 8, 1, 3, 56, 7, 2, 3, 0]
 sorted_list = quicksort(mylist)
 print('Sorted list::')
 print(sorted_list)
