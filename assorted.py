@@ -2,6 +2,7 @@
 import collections
 import sys
 import math
+from typing import List
 
 
 def find_longest_word_in_string(letters, words):
@@ -469,13 +470,100 @@ def twoSum():
     return []
 
 
+def addBinary(a: str, b: str) -> str:
+    print(a, b)
+    m = len(a) - 1
+    n = len(b) - 1
+    res = ''
+    carry = 0
+
+    while m >= 0 or n >= 0:
+        one = 0 if m < 0 else a[m]
+        two = 0 if n < 0 else b[n]
+        _sum = int(one) + int(two) + carry
+        carry = 1 if _sum > 1 else 0
+        _sum = 0 if _sum < 1 else _sum % 2
+        res += (str(_sum))
+        print(res)
+
+        m -= 1
+        n -= 1
+    if carry > 0:
+        res += (str(carry))
+    return res[::-1]
+
+
+def isPalindrome(s: str) -> bool:
+    n = len(s)
+    left = 0
+    right = n - 1
+    if n <= 1:
+        return False
+    while left < right:
+        if s[left] != s[right]:
+            return False
+    return True
+
+
+def longestPalindrome(s: str) -> str:
+    pals = {}
+    n = len(s)
+    start = 0
+    end = n - 1
+    # pal = [s[i:j] for i in range(len(s)) for j in range(i+1, len(s)) if isPalindrome(s[i:j]) ]
+    for i in range(start, n):
+        pass
+
+    print(pals)
+    return ''
+
+
+def findMedianSortedArrays(nums1: List[int], nums2: List[int]) -> float:
+    m, n, counter = 0, 0, 0
+    nums3 = []
+    x = len(nums1) + len(nums2)
+    is_decimal = False if x % 2 == 0 else True
+    mid = x // 2
+    l = len(nums1) if len(nums1) < len(nums2) else len(nums2)
+    print(l)
+    while len(nums3) <= mid:
+        print(mid, len(nums3))
+        if nums1[m] < nums2[n]:
+            nums3.append(nums1[m])
+            m += 1
+        else:
+            nums3.append(nums2[n])
+            n += 1
+    print(nums3)
+    # if is_decimal:
+    #     return (nums3[-1] + nums3[-2]) / 2
+    # return nums3[-1]
+
+def twoSum(numbers: List[int], target: int) -> List[int]:
+    # numbers = [2,3,4], target = 6 Output: [1,3]
+    # numbers = [2,7,11,15], target = 9 Output: [1,2]
+    dct = {}
+    for idx, val in enumerate(numbers):
+        diff = target - val
+        if diff in dct:
+            return [dct[diff], idx + 1]
+
+        dct[val] = idx + 1
+
+
+
 if __name__ == '__main__':
     D = {"able", "ale", "apple", "bale", "kangaroo"}
     S = "abppplee"
+
     # print (find_longest_word_in_string(S, D))
     # print(fibonacciModified(0, 1, 5))
     # print(substrings(123))
     # print(stockmax([5, 3, 2]))
     # fib(1000)
     # print(findMedianSortedArrays([1, 2, 3], [1, 2, 3]))
-    print(twoSum())
+    # print(twoSum())
+    # print(addBinary("0", "0"))
+    # print(longestPalindrome('abppplee'))
+    # findMedianSortedArrays(nums1 = [1,2], nums2 = [3,4])
+    print(twoSum(numbers = [2,3,4], target = 6))

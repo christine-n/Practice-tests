@@ -1,3 +1,6 @@
+from typing import List
+
+
 class TreeNode:
     def __init__(self, key=0, left=None, right=None):
         self.val = key
@@ -35,6 +38,38 @@ class TreeNode:
                 print(self.printTree(root.right, arr.append(root.right)))
         return arr
 
+    # recursively
+    def inorderTraversal1(self, root):
+        res = []
+        self.helper(root, res)
+        return res
+
+    def helper(self, root, res):
+        if root:
+            self.helper(root.left, res)
+            res.append(root.val)
+            self.helper(root.right, res)
+
+    # iteratively
+    def inorderTraversal(self, root):
+        res, stack = [], []
+        while True:
+            while root:
+                stack.append(root)
+                root = root.left
+            if not stack:
+                return res
+            node = stack.pop()
+            res.append(node.val)
+            root = node.right
+
+[]
+[TreeNode{val: 1, left: TreeNode{val: 3, left: None, right: None}, right: TreeNode{val: 4, left: None, right: None}}]
+[TreeNode{val: 1, left: TreeNode{val: 3, left: None, right: None}, right: TreeNode{val: 4, left: None, right: None}}, TreeNode{val: 3, left: None, right: None}]
+[TreeNode{val: 1, left: TreeNode{val: 3, left: None, right: None}, right: TreeNode{val: 4, left: None, right: None}}]
+[]
+[TreeNode{val: 3, left: None, right: None}]
+[]
 if __name__ == '__main__':
     tree = [3, 9, 20, None, None, 15, 7]
     root = TreeNode(tree[0])
@@ -42,5 +77,6 @@ if __name__ == '__main__':
         root = root.insertBinaryTree(root, i)
     # print(root)
     # print(root.maxDepthBinaryTree(root))
-    arr = []
-    root.printTree(root, [])
+    # arr = []
+    # root.printTree(root, [])
+    print(root.inorderTraversal(root))

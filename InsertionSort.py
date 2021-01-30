@@ -37,6 +37,30 @@ def insertion_sort(array):
 # mylist = input('Enter the list values to sort:   ').split()
 # mylist = [int(x) for x in mylist]
 mylist = [1, 2, 8, 4, 5]
-insertion_sort(mylist)
-print('Sorted list::')
-print(mylist)
+# insertion_sort(mylist)
+# print('Sorted list::')
+# print(mylist)
+
+
+
+
+
+def quickSort(arr):
+    n = len(arr)
+    pivot = n // 2
+    if n < 2:
+        return arr
+
+    low, mid, high = [], [], []
+    for el in arr:
+        if el < arr[pivot]:
+            low.append(el)
+        elif el > arr[pivot]:
+            high.append(el)
+        else:
+            mid.append(el)
+    print(low)
+    return quickSort(low) + mid + quickSort(high)
+
+
+print(quickSort(mylist))

@@ -1,0 +1,84 @@
+MS PREP
+
+Part (ii)
+_____________
+
+SYSTEM DESIGN
+
+- [ ] http://bit.ly/NailTheTechInterview
+- [ ] https://www.hiredintech.com/system-design/
+- [ ] http://blog.gainlo.co/index.php/category/system-design-interview-questions/
+- [ ] https://www.educative.io/collection/5668639101419520/5649050225344512?authorName=Design%20Gurus
+- [ ] Design a network layer for a bank that ensures no one outside the network can access the system
+- [ ] https://docs.google.com/document/d/1gZGuSlUnm00mvWS1AB5hkDxFCrGN44mPqGr0hUzQJZM/edit
+
+Top 10 algorithms:
+____________________
+- [ ] Cyclic buffer
+- [ ] Variable / pointer manipulation (longest palindromic substring in a string)
+- [ ] Sorting fundamentals (time complexity)
+- [ ] Graphs and tree traversal (insert, delete, find?)
+- [ ] Custom data structure construction
+- [ ] Double linked linked list
+- [ ] Dynamic arrays || arrays who’s
+- [ ] Microservices Vs Monoliths
+- [ ] Heap**
+- [ ] (* shifted binary search)
+- [ ] Least common ancestor in binary tree
+- [ ] Linked List
+    - [ ] Is there a cycle in the linked list?
+    - [ ] Detect duplicates
+- [ ] Binary vs linear search ** implement
+- [ ] Time and space complexity
+- [x] Matching parenthesis
+- [ ] Recursion
+- [ ] Dynamic programming || https://www.youtube.com/watch?v=P8Xa2BitN3I
+- [ ] Binary tree
+- [ ] Depth first search & Breath first search
+- [ ] Hash tables
+- [ ] Binary search
+
+
+Interview Tips
+
+----------------------------------------
+- Experience: talk about actual work **
+	- Visual and design UX and UI
+	- Building frameworks and component
+	- Core APIs
+- Actual implementaion of the system:
+	- Show techincal side of the problem solving
+
+
+Interview Prep
+________________
+
+- [ ] https://www.youtube.com/watch?v=Si4GLeQoqLA
+- [ ] https://www.youtube.com/watch?v=P_YMAJWEK3Q
+
+Knowledge
+_____________
+- [ ] https://www.youtube.com/watch?v=r1MXwyiGi_U
+- [ ] https://www.youtube.com/watch?v=D6xkbGLQesk&list=PLBZBJbE_rGRV8D7XZ08LK6z-4zPoWzu5H&index=7  (BigO)
+- [ ] https://www.youtube.com/watch?v=qp8u-frRAnU     (Linked list)
+- [ ] https://www.youtube.com/watch?v=t0Cq6tVNRBA  (heaps — need to be implemented) !! ***
+- [ ] https://www.youtube.com/c/HackerrankOfficial/videos (hacker rank channel)
+
+Snacks:
+________
+- [ ] https://leetcode.com/problems/coin-change/ ||  https://www.youtube.com/watch?v=1R0_7HqNaW0
+- [ ] https://leetcode.com/problems/number-of-islands/  || https://www.youtube.com/watch?v=__98uL6wst8
+- [ ] https://www.youtube.com/watch?v=nqlNzOcnCf
+- [ ] https://leetcode.com/problems/minimum-distance-between-bst-nodes/
+
+
+- [ ] https://www.youtube.com/watch?v=7HgsS8bRvjo (Tree Coding interview)
+- [ ] https://medium.com/@lauren.kroner/understanding-big-o-notation-61ba6dbb2215 (Big O)
+- [ ] https://www.youtube.com/watch?v=QuFPIZj55hU  (Hashtable JS)
+- [ ] https://www.youtube.com/watch?v=54iv1si4YCM (Hashtable exercise questions)
+- [ ] https://www.youtube.com/watch?v=6JeuJRqKJrI (Binary search tree)
+- [ ] https://www.youtube.com/watch?v=yC83Kp2xig8 (BST)
+- [ ] https://www.youtube.com/watch?v=ChWWEncl76Y (Linked lists)
+- [ ] https://www.youtube.com/watch?v=bK6lijUbvms&list=PL5tcWHG-UPH2fmYC6kgey1RIxP2iK9EEL&index=3.  (Reverse order level traversal)
+
+ 

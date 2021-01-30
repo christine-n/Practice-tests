@@ -21,3 +21,20 @@ mylist = [4, 3, 5, 2, 9]
 selection_sort(mylist)
 print('Sorted list::')
 print(mylist)
+
+
+
+def selectionSort(arr):
+    min = arr[0]
+    n = len(arr)
+
+    for i in range(n - 1):
+        min_idx = i
+        for j  in range(i + 1, n):
+            if arr[j] < arr[i]:
+                min_idx = j
+        arr[min_idx], arr[i] = arr[i], arr[min_idx]
+    return arr
+
+mylist = [4, 3, 5, 2, 9]
+selectionSort(mylist)

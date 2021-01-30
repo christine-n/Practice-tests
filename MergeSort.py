@@ -64,7 +64,31 @@ def merge_sort(array):
 # mylist = [int(x) for x in mylist]
 # mylist = [5, 3, 7, 8, 1, 3, 56, 7, 2, 3, 0]
 # mylist = [5, 4, 2, 3, 1]
-mylist = [1,2,3,4,5]
+mylist = [1, 2, 3, 4, 5]
 sorted_list = merge_sort(mylist)
 print('Sorted list::')
 print(sorted_list)
+
+
+def merging(left, right):
+    c = []
+    l, r = 0, 0
+
+    while l < len(left) and r < len(right):
+        print(left, right)
+        if left[l] > right[r]:
+            c.append(right[r])
+            r += 1
+        else:
+            c.append(left[l])
+            l += 1
+
+    if l == len(left):
+        c.extend(right[r:])
+    else:
+        c.extend(left[l:])
+
+    return c
+
+
+print(merging([2, 3, 4], [1, 2, 3]))

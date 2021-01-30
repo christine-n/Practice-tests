@@ -12,6 +12,7 @@ def bubbleSort():
         # shrinks because the remaining items have already been
         # sorted.
         for j in range(n - i - 1):
+            print(arr)
             if arr[j] > arr[j + 1]:
                 # If the item you're looking at is greater than its
                 # adjacent value, then swap them

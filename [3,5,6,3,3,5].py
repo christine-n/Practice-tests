@@ -64,9 +64,10 @@ def binStringRec(val, counter):
 def binString():
     s = '01100'
     val = int(s, 2)
+    print(val)
     counter = 0
     return binStringRec(val, counter)
-
+print(binString())
 
 def toLowestIntVal():
     i = 20
@@ -211,4 +212,4 @@ def solution():
     return max_distance
 
 
-print(solution())
+# print(solution())
